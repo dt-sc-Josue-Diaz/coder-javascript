@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simulador de Calificaciones</title>
-  <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/simulador.js"></script>
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
+
 <body>
   <main class="contenedor">
     <h1>Simulador Avanzado de Calificaciones</h1>
     <section class="descripcion">
       <p>
-        Este simulador permite a un estudiante ingresar su nombre, la cantidad de materias cursadas y las calificaciones obtenidas.
-        Luego calcula el promedio y determina si ha aprobado o no. Toda la interacción se realiza desde la consola del navegador y
-        mediante cuadros de diálogo de JavaScript.
+        Este simulador permite a un estudiante ingresar su nombre, las materias cursadas y las calificaciones obtenidas.
+        Luego calcula el promedio general y muestra los resultados en esta misma página.
       </p>
     </section>
-    <section class="instrucciones">
-      <p>
-        Abre la consola del navegador y recarga la página para iniciar la simulación.
-      </p>
+
+    <section class="controles">
+      <button onclick="registrarEstudiante()">Registrar Estudiante</button>
+      <button onclick="ingresarDatos()">Ingresar Datos</button>
+      <button onclick="mostrarResultados()">Mostrar Resultados</button>
+      <button onclick="reiniciarSimulacion()">Reiniciar</button>
+    </section>
+
+    <section class="resultado">
+      <pre id="resultadoConsola"></pre>
     </section>
   </main>
-  <script src="js/simulador.js"></script>
+
+  <script src="js/calificaciones.js"></script>
 </body>
+
 </html>
