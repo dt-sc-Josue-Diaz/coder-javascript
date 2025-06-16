@@ -1,6 +1,6 @@
 // js/simulador.js
 
-const mensajeBienvenida = "Bienvenido al simulador avanzado de calificaciones";
+const mensajeBienvenida = "Bienvenido al sistema avanzado de calificaciones";
 let nombreEstudiante = "";
 let materias = [];
 let calificaciones = [];
@@ -79,11 +79,11 @@ function mostrarResultados() {
 }
 
 // Reiniciar datos
-function reiniciarSimulacion() {
+function reiniciar() {
     limpiarPantalla();
     nombreEstudiante = "";
     materias = [];
     calificaciones = [];
-    alert("Simulación reiniciada.");
-    mostrarEnPantalla("Simulación reiniciada.");
+    alert("Proceso reiniciado.");
+    mostrarEnPantalla("Sistema reiniciado.");
 }
