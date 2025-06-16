@@ -23,13 +23,14 @@ Armar la estructura base del simulador. Integrar las herramientas de JavaScript 
   - Entrada de datos
   - Procesamiento
 
-Salida de resultados
+**Salida de resultados**
+
 - Realiza llamadas (invocaciones) a las funciones en tu simulador.
 El proyecto evolucionará conforme aprendas nuevas características de JavaScript. Lo que no puedas implementar aún, emúlalo usando variables, constantes y/o arrays.
 
 Define mensajes claros y legibles para los cuadros de diálogo. Usa concatenación de textos con variables y realiza saltos de línea (\n) cuando sea necesario.
 
-## Criterios de Evaluación
+### Criterios de Evaluación
 
 1. Estructura HTML y archivo JS
 
@@ -52,7 +53,7 @@ Es necesario para visualizar este proyecto
 - Un navegador moderno (Chrome, Firefox, Edge).
 - Acceder a la consola del navegador (F12 > pestaña Consola).
 
-## 🧪 Instrucciones de Uso
+### 🧪 Instrucciones de Uso
 
 1. Se puede abrir el archivo `index.html` con el navegador. La descripción te guiará los pasos necesarios para caclular el promedio
 3. El botón de `Registrar Estudiante` permite al usuario registrarse o loggearse en el sistema. 
@@ -62,7 +63,7 @@ Es necesario para visualizar este proyecto
 5. Al terminar de registrar la informacion el boto `Mostrar Resultados` te permitirá ver la calficacion obtenida y te dara un desgloce de la información que hayas ingresado    
 7. Puedes repetir la simulación debes ingresar a `Reiniciar`.
 
-## 📄 Notas
+### 📄 Notas
 
 - Este proyecto es parte de la **Entrega 1** de un curso de programación con JavaScript.
 - El diseño visual es mínimo, enfocado en la lógica del código.
