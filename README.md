@@ -16,7 +16,7 @@ Es necesario para visualizar este proyecto
 
 ### 📄 Notas
 
-- Este proyecto es parte de la **Entrega 1** de un curso de programación con JavaScript.
+- Este proyecto es parte de la **Entrega final** del curso de programación con JavaScript.
 - El diseño visual es mínimo, enfocado en la lógica del código.
 ---
 
