@@ -1,4 +1,3 @@
-// js/simulador.js
 
 // js/simulador.js
 // Requisitos cubiertos:
@@ -178,7 +177,7 @@ function descargarReporte() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `reporte_${state.estudiante.nombre.replace(/\s+/g,'_')}.json`;
+  a.download = `reporte_${state.estudiante.nombre.replace(/\s+/g, '_')}.json`;
   a.click();
   URL.revokeObjectURL(url);
 }
@@ -238,7 +237,7 @@ function render() {
   // Eventos
   $("#btnGuardarNombre").addEventListener("click", () => {
     const nombre = $("#inpNombre").value.trim();
-    if (!nombre) { Swal.fire({icon:"info", title:"Escribe un nombre"}); return; }
+    if (!nombre) { Swal.fire({ icon: "info", title: "Escribe un nombre" }); return; }
     state.estudiante.nombre = nombre;
     appendConsole(`Estudiante: ${nombre}`);
     render();
@@ -258,7 +257,7 @@ function render() {
         { nombre: state.oferta[4] || "Bases de Datos", calificacion: 6.5 }
       ];
       for (const e of ejemplo) agregarMateriaFila(e.nombre, e.calificacion);
-      Swal.fire({icon:"success", title:"Datos de ejemplo cargados"});
+      Swal.fire({ icon: "success", title: "Datos de ejemplo cargados" });
     }
   });
 

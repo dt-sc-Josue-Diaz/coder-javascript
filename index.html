@@ -4,33 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simulador de Calificaciones</title>
+  <title>Simulador Avanzado de Calificaciones</title>
   <link rel="stylesheet" href="css/estilos.css" />
+  <!-- SweetAlert2 para reemplazar alert/prompt/confirm -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Chart.js para visualización -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
   <main class="contenedor">
     <h1>Simulador Avanzado de Calificaciones</h1>
+
     <section class="descripcion">
-      <p>
-        Este simulador permite a un estudiante ingresar su nombre, las materias cursadas y las calificaciones obtenidas.
-        Luego calcula el promedio general y muestra los resultados en esta misma página.
-      </p>
+      <ol>
+        <li>Ingresar los datos del estudiante.</li>
+        <li>Para cargar materias selecciona del las materias sugeridas y selecciona agregar materia.</li>
+        <li>Captura la calificación de la materia y repite el paso para las metarias necesarias.</li>
+        <li>Guarda el estudiante.</li>
+        <li>Calcular el promedio del estudiante.</li>
+        <li>Visualizar los resultados en pantalla.</li>
+        <li>Descargar el reporte final.</li>
+      </ol>
     </section>
 
-    <section class="controles">
-      <button onclick="registrarEstudiante()">Registrar Estudiante</button>
-      <button onclick="ingresarDatos()">Ingresar Datos</button>
-      <button onclick="mostrarResultados()">Mostrar Resultados</button>
-      <button onclick="reiniciar()">Reiniciar</button>
-    </section>
+    <!-- Controles principales generados por JS -->
+    <section id="app"></section>
 
     <section class="resultado">
+      <h2>Consola</h2>
       <pre id="resultadoConsola"></pre>
     </section>
   </main>
 
-  <script src="js/calificaciones.js"></script>
+  <script src="js/calificaciones.js" defer></script>
 </body>
 
 </html>
